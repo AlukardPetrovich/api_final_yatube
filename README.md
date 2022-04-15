@@ -54,7 +54,24 @@
 ### Примеры:
 
 #### запрос:
+'post' http://127.0.0.1:8000/api/v1/jwt/create/
+```
+{
+  "username": "string",
+  "password": "string"
+}
+```
+#### ответ:
+```
+{
+  "refresh": "string",
+  "access": "string"
+}
+```
+
+#### запрос:
 'get' http://127.0.0.1:8000/api/v1/posts/
+
 #### ответ:
 ```
 {
@@ -89,20 +106,5 @@
   "text": "string",
   "created": "2019-08-24T14:15:22Z",
   "post": 0
-}
-```
-#### запрос:
-'post' http://127.0.0.1:8000/api/v1/jwt/create/
-```
-{
-  "username": "string",
-  "password": "string"
-}
-```
-#### ответ:
-```
-{
-  "refresh": "string",
-  "access": "string"
 }
 ```
